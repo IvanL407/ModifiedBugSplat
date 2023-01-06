@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Splat</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!--
+        1. Added more color to my website.
+        2. Added a useful and unique link.
+        3. Added alt text for images.
+        4. Added and revised headings for more clarity.
+        5. Content can be accessed using only a keyboard.
+    -->
+
+    <script>
+        function initialize()
+        {
+            document.getElementById("mom").style.visibility = "hidden";
+            count = 0;
+            let comment = "test";
+            const bug1 = document.querySelector(".bug1");
+            const bug2 = document.querySelector(".bug2");
+            const bug3 = document.querySelector(".bug3");
+            const bug4 = document.querySelector(".bug4");
+            const bug5 = document.querySelector(".bug5");
+            const bug6 = document.querySelector(".bug6");
+            const bug7 = document.querySelector(".bug7");
+            const bug8 = document.querySelector(".bug8");
+            const bug9 = document.querySelector(".bug9");
+            const bug10 = document.querySelector(".bug10");
+            const bug11 = document.querySelector(".bug11");
+            const bug12 = document.querySelector(".bug12");
+            const bug13 = document.querySelector(".bug13");
+            const bug14 = document.querySelector(".bug14");
+            const bug15 = document.querySelector(".bug15");            
+            commentary = document.getElementById("comments");
+        }
+
+        function splat(num)
+        {
+            setThumbnail(num);
+            display();
+        }
+
+        function enhancement()
+        {
+            document.getElementById("bug1").style.visibility = "hidden";
+            document.getElementById("bug2").style.visibility = "hidden";
+            document.getElementById("bug3").style.visibility = "hidden";
+            document.getElementById("bug4").style.visibility = "hidden";
+            document.getElementById("bug5").style.visibility = "hidden";
+            document.getElementById("bug6").style.visibility = "hidden";
+            document.getElementById("bug7").style.visibility = "hidden";
+            document.getElementById("bug8").style.visibility = "hidden";
+            document.getElementById("bug9").style.visibility = "hidden";
+            document.getElementById("bug10").style.visibility = "hidden";
+            document.getElementById("bug11").style.visibility = "hidden";
+            document.getElementById("bug12").style.visibility = "hidden";
+            document.getElementById("bug13").style.visibility = "hidden";
+            document.getElementById("bug14").style.visibility = "hidden";
+            document.getElementById("bug15").style.visibility = "hidden";
+
+            document.getElementById("btn1").style.visibility = "hidden";
+            document.getElementById("btn2").style.visibility = "hidden";
+            document.getElementById("btn3").style.visibility = "hidden";
+            document.getElementById("btn4").style.visibility = "hidden";
+            document.getElementById("btn5").style.visibility = "hidden";
+            document.getElementById("btn6").style.visibility = "hidden";
+            document.getElementById("btn7").style.visibility = "hidden";
+            document.getElementById("btn8").style.visibility = "hidden";
+            document.getElementById("btn9").style.visibility = "hidden";
+            document.getElementById("btn10").style.visibility = "hidden";
+            document.getElementById("btn11").style.visibility = "hidden";
+            document.getElementById("btn12").style.visibility = "hidden";
+            document.getElementById("btn13").style.visibility = "hidden";
+            document.getElementById("btn14").style.visibility = "hidden";
+            document.getElementById("btn15").style.visibility = "hidden";
+
+            document.getElementById("mom").style.visibility = "visible";
+            var bigPicture = document.getElementById('mom');
+            if (mom && mom.style)
+            {
+                mom.style.height = '1000px';
+                mom.style.width = '1000px';
+                comment = "That's it. Now Mamma's angry!";
+            }
+        }
+
+        function setThumbnail(num)
+        {
+            var defiant = ["It's too late...", "There's too many!", "It's over!", "You can't stop us all...", "Your home is ruined!", "Your efforts aren't enough!", "lol", "You're too slow!"];
+            var mercy = ["Slow down...", "Relax, please...", "We'll leave...", "I promise we'll stop...", "You don't have to do this...", "Let's talk it out..."];
+
+            count++;
+            thumbnail = 'splat.jpg';
+            if (num == 1)
+            {
+                bug1.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant = defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn1").disabled = true;
+            }
+            else if (num == 2)
+            {
+                bug2.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn2").disabled = true;
+            }
+            else if (num == 3)
+            {
+                bug3.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn3").disabled = true;
+            }
+            else if (num == 4)
+            {
+                bug4.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn4").disabled = true;
+            }
+            else if (num == 5)
+            {
+                bug5.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn5").disabled = true;
+            }
+            else if (num == 6)
+            {
+                bug6.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn6").disabled = true;
+            }
+            else if (num == 7)
+            {
+                bug7.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn7").disabled = true;
+            }
+            else if (num == 8)
+            {
+                bug8.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn8").disabled = true;
+            }
+            else if (num == 9)
+            {
+                bug9.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn9").disabled = true;
+            }
+            else if (num == 10)
+            {
+                bug10.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn10").disabled = true;
+            }
+            else if (num == 11)
+            {
+                bug11.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn11").disabled = true;
+            }
+            else if (num == 12)
+            {
+                bug12.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn12").disabled = true;
+            }
+            
+            else if (num == 13)
+            {
+                bug13.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn13").disabled = true;
+            }
+            else if (num == 14)
+            {
+                bug14.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn14").disabled = true;
+            }
+            else if (num == 15)
+            {
+                bug15.src = 'splat.jpg';
+                if (count < 8)
+                {
+                    // num = Math.floor(Math.random()*defiant.length);
+                    // comment = defiant[num];
+                    // defiant.remove(num);
+                    comment = defiant[Math.floor(Math.random()*defiant.length)];
+                }
+                else if (count < 14)
+                {
+                    comment = mercy[Math.floor(Math.random()*mercy.length)];
+                }
+                else if (count == 15)
+                {
+                    comment = "You've splatted us all.";
+                    enhancement();
+                }
+                document.getElementById("btn15").disabled = true;
+            }
+
+            display();
+        }
+
+        function display()
+        {
+
+            commentary.innerHTML = comment;
+        }
+    </script>
+</head>
+
+<body onload="initialize();">
+
+    <h1 class = "title">Bug Splat</h1>
+
+    <h2 class = "subtitle">Rules</h2>
+    <p>Your home has been infested by dangerous bugs. After failed negotiations, you have no choice but to begin splatting...</p>
+    <p>For more information about this game, read the <a href="https://gnrlwoundwort.github.io/Web-Development/Level%204/spec%20sheets/Level%204%20Bug%20Splat.pdf">Project Overview</a></p>
+    <p>Comments: <span id = "comments"></span></p>
+
+    <div class = "mamaBug">
+        <img id="mom" src="momBug.png" style="width:0px;height:0px;">      
+    </div>
+
+    <div class="container">
+
+        <div class = "item1">
+            <img id="bug1" src="bug.png" class="image" alt="ladybug1">
+            <button id="btn1" onclick="splat(1);">
+                Splat
+            </button>
+        </div>
+        <div class = "item2">
+            <img id="bug2" src="bug.png" class="image" alt="ladybug2">
+            <button id="btn2" onclick="splat(2);">
+                Splat
+            </button>
+        </div>
+        <div class = "item3">
+            <img id="bug3" src="bug.png" class="image" alt="ladybug3">
+            <button id="btn3" onclick="splat(3);">
+                Splat
+            </button>
+        </div>
+        <div class = "item4">
+            <img id="bug4" src="bug.png" class="image" alt="ladybug4">
+            <button id="btn4" onclick="splat(4);">
+                Splat
+            </button>
+        </div>
+        <div class = "item5">
+            <img id="bug5" src="bug.png" class="image" alt="ladybug5">
+            <button id="btn5" onclick="splat(5);">
+                Splat
+            </button>
+        </div>
+        <div class = "item6">
+            <img id="bug6" src="bug.png" class="image" alt="ladybug6">
+            <button id="btn6" onclick="splat(6);">
+                Splat
+            </button>
+        </div>
+        <div class = "item7">
+            <img id="bug7" src="bug.png" class="image" alt="ladybug7">
+            <button id="btn7" onclick="splat(7);">
+                Splat
+            </button>
+        </div>
+        <div class = "item8">
+            <img id="bug8" src="bug.png" class="image" alt="ladybug8">
+            <button id="btn8" onclick="splat(8);">
+                Splat
+            </button>
+        </div>
+        <div class = "item9">
+            <img id="bug9" src="bug.png" class="image" alt="ladybug9">
+            <button id="btn9" onclick="splat(9);">
+                Splat
+            </button>
+        </div>
+        <div class = "item10">
+            <img id="bug10" src="bug.png" class="image" alt="ladybug10">
+            <button id="btn10" onclick="splat(10);">
+                Splat
+            </button>
+        </div>
+        <div class = "item11">
+            <img id="bug11" src="bug.png" class="image" alt="ladybug11">
+            <button id="btn11" onclick="splat(11);">
+                Splat
+            </button>
+        </div>
+        <div class = "item12">
+            <img id="bug12" src="bug.png" class="image" alt="ladybug12">
+            <button id="btn12" onclick="splat(12);">
+                Splat
+            </button>
+        </div>
+        <div class = "item13">
+            <img id="bug13" src="bug.png" class="image" alt="ladybug13">
+            <button id="btn13" onclick="splat(13);">
+                Splat
+            </button>
+        </div>
+        <div class = "item14">
+            <img id="bug14" src="bug.png" class="image" alt="ladybug14">
+            <button id="btn14" onclick="splat(14);">
+                Splat
+            </button>
+        </div>
+        <div class = "item15">
+            <img id="bug15" src="bug.png" class="image" alt="ladybug15">
+            <button id="btn15" onclick="splat(15);">
+                Splat
+            </button>
+        </div>
+    </div>
+</body>
+</html>
